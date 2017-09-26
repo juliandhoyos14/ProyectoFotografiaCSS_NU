@@ -1,22 +1,44 @@
 body {
-  color: white;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script';
   background-color: black;
+  font-weight: bold;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu_item {
+  float: right;
+  margin: 5px 5px;
+  padding: 15px 0px;
+}
+
+.item_footer {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  text-decoration: underline;
+  color: white;
+}
+
+.link_actual {
+  text-decoration: none !important;
 }
 
 @media (min-width: 900px) {
-  #contenido {
+  header {
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    height: 80px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  header {
-    background-color: #5b7989;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 80px;
-    width: 100%;
+    color: white;
   }
 
   header h1 {
@@ -29,35 +51,100 @@ body {
     height: 100%;
   }
 
-  #imagen_central {
-    width: 100%;
-    background-color: #82c3a6;
-  }
-
-  #imagen_central img {
-    width: 90%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  footer {
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #imagen_secundaria {
+  #contenido {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contenedor {
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #imagen_central {
+    width: 100%;
+    background-color: #82c3a6;
+    text-align: center;
+    order: 1;
+  }
+
+  #imagen_central img {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+  }
+
+  #imagen_secundaria_izquierda {
+    width: 50%;
     background-color: #d5c75f;
+    text-align: center;
+    order: 2;
   }
 
   #imagen_secundaria_izquierda img {
+    width: 90%;
+    margin-top: 10px;
+    border: 1px solid black;
+  }
+
+  #imagen_secundaria_derecha {
     width: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #d5c75f;
+    text-align: center;
+    order: 3;
   }
 
   #imagen_secundaria_derecha img {
-    width: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 90%;
+    margin-top: 10px;
+    border: 1px solid black;
   }
+
+  #contenedor_footer {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row;
+  }
+
+  #contacto {
+    width: 25%;
+    text-align: left;
+    order: 1;
+  }
+
+  #terminos {
+    width: 25%;
+    text-align: left;
+    order: 2;
+  }
+
+  #redes_sociales {
+    width: 25%;
+    text-align: left;
+    order: 3;
+  }
+
+  #derechos {
+    width: 25%;
+    text-align: left;
+    order: 4;
+  }
+
+
 }
 
 @media (max-width: 899px) {

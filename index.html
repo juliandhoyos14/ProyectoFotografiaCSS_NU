@@ -8,31 +8,63 @@
     <title>Comenzando con la Fotograf&iacute;a - Index</title>
   </head>
   <body>
+    <header>
+      <h1>Comenzando con la Fotograf&iacute;a</h1>
+      <nav>
+        <ul class="menu">
+          <li class="menu_item"><a class="link_actual" href="#">Inicio</a></li>
+          <li class="menu_item"><a href="paisajes.html">Paisajes</a></li>
+          <li class="menu_item"><a href="retratos.html">Retratos</a></li>
+        </ul>
+      </nav>
+    </header>
     <div id="contenido">
-      <header>
-        <h1>Comenzando con la Fotograf&iacute;a</h1>
-        <nav>
-          <ul>
-            <li class="active"><a href="#">Inicio</a></li>
-            <li><a href="paisajes.html">Paisajes</a></li>
-            <li><a href="retratos.html">Retratos</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section id="imagen_central">
-        <img src="img/paisaje_1.jpg" alt="Comenzando con la fotograf&iacute;a">
-      </section>
-      <section id="imagen_secundaria">
+      <div id="contenedor">
+        <section id="imagen_central">
+          <img src="img/paisaje_1.jpg" alt="Comenzando con la fotograf&iacute;a">
+        </section>
         <section id="imagen_secundaria_izquierda">
-          <img src="img/paisaje_2.jpg" alt="Paisajes">
+          <a href="paisajes.html">
+            <img src="img/paisaje_2.jpg" alt="Paisajes">
+          </a>
+          <p>Paisajes</p>
         </section>
         <section id="imagen_secundaria_derecha">
-          <img src="img/retratos_1.jpg" alt="Retratos">
+          <a href="retratos.html">
+            <img src="img/retratos_1.jpg" alt="Retratos">
+          </a>
+          <p>Retratos</p>
         </section>
-      </section>
-      <footer>
-
-      </footer>
+      </div>
     </div>
+    <footer>
+      <div id="contenedor_footer">
+        <div id="contacto">
+          <h2>Contacto</h2>
+          <ul class="menu">
+            <li class="item_footer">juliand.hoyos@gmail.com</li>
+            <li class="item_footer">Carrera 63 # 40-16</li>
+            <li class="item_footer">Teléfono: 1234567</li>
+          </ul>
+        </div>
+        <div id="terminos">
+          <h2>T&eacute;rminos</h2>
+          <p>Conoce nuestros t&eacute;rminos y condiciones</p>
+        </div>
+        <div id="redes_sociales">
+          <h2>Redes sociales</h2>
+          <p>Comparte en nuestras redes</p>
+          <ul class="menu">
+            <li class="item_footer">Facebook</li>
+            <li class="item_footer">Twitter</li>
+            <li class="item_footer">Instagram</li>
+          </ul>
+        </div>
+        <div id="derechos">
+          <h2>Derechos</h2>
+          <p>Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

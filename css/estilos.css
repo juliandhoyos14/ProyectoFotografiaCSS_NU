@@ -23,6 +23,19 @@ a:link, a:visited {
   padding: 0px 3px 0px 3px;
 }
 
+.item_footer {
+  margin: 0px 10px 0px 10px;
+  padding: 0;
+}
+
+#contenedor {
+  width: 100%;
+  background-color: #d5c75f;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 #paisajes {
   transition-property: border, box-shadow, transform;
   transition-duration: 1s, 1s, 1s;
@@ -45,11 +58,84 @@ a:link, a:visited {
   transform: translate(20px,-5px);
 }
 
+#imagen_central {
+  width: 100%;
+  background-color: #82c3a6;
+  text-align: center;
+  order: 1;
+}
+
+#imagen_central img {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+#imagen_1 img {
+  width: 95%;
+  border: 1px solid black;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#imagen_2 img {
+  width: 95%;
+  border: 1px solid black;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#imagen_3 img {
+  width: 95%;
+  border: 1px solid black;
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+#imagen_4 img {
+  width: 95%;
+  border: 1px solid black;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#imagen_5 img {
+  width: 95%;
+  border: 1px solid black;
+}
+
+#imagen_6 img {
+  width: 95%;
+  border: 1px solid black;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#imagen_secundaria_izquierda img {
+  width: 90%;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+#imagen_secundaria_derecha img {
+  width: 90%;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+#contenedor_footer {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 img[src$='.svg']{
   border-radius: 50px;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
-  width: 10%;
+  width: 20px;
 }
 
 @-webkit-keyframes slidein {
@@ -78,7 +164,7 @@ img[src$='.svg']{
     margin-right: auto;
     color: white;
     animation-name: slidein;
-    animation-duration: 0.2s;
+    animation-duration: 1s;
   }
 
   header h1 {
@@ -112,35 +198,10 @@ img[src$='.svg']{
     padding: 0;
   }
 
-  .item_footer {
-    margin: 0px 10px 0px 10px;
-    padding: 0;
-  }
-
   #contenido {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #contenedor {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  #imagen_central {
-    width: 100%;
-    background-color: #82c3a6;
-    text-align: center;
-    order: 1;
-  }
-
-  #imagen_central img {
-    width: 90%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid black;
   }
 
   #imagen_secundaria_izquierda {
@@ -150,30 +211,11 @@ img[src$='.svg']{
     order: 2;
   }
 
-  #imagen_secundaria_izquierda img {
-    width: 90%;
-    margin-top: 10px;
-    border: 1px solid black;
-  }
-
   #imagen_secundaria_derecha {
     width: 50%;
     background-color: #d5c75f;
     text-align: center;
     order: 3;
-  }
-
-  #imagen_secundaria_derecha img {
-    width: 90%;
-    margin-top: 10px;
-    border: 1px solid black;
-  }
-
-  #contenedor_footer {
-    width: 100%;
-    padding-top: 10px;
-    display: flex;
-    flex-flow: row;
   }
 
   #contacto {
@@ -199,6 +241,54 @@ img[src$='.svg']{
     text-align: left;
     order: 4;
   }
+
+  #imagen_1 {
+    width: 31%;
+    background-color: #d5c75f;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    order: 1;
+  }
+
+  #imagen_2 {
+    width: 31%;
+    background-color: #d5c75f;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    order: 2;
+  }
+
+  #imagen_3 {
+    width: 31%;
+    background-color: #d5c75f;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    order: 3;
+  }
+
+  #imagen_4 {
+    width: 31%;
+    background-color: #d5c75f;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    order: 4;
+  }
+
+  #imagen_5 {
+    width: 31%;
+    background-color: #d5c75f;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    order: 5;
+  }
+
+  #imagen_6 {
+    width: 31%;
+    background-color: #d5c75f;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    order: 6;
+  }
 }
 
 @media (max-width: 899px) {
@@ -207,21 +297,121 @@ img[src$='.svg']{
     border-radius: 10px 10px 0px 0px;
     -moz-border-radius: 10px 10px 0px 0px;
     -webkit-border-radius: 10px 10px 0px 0px;
-    height: 120px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     color: white;
     animation-name: slidein;
-    animation-duration: 0.2s;
+    animation-duration: 1s;
     text-align: center;
+  }
+
+  header h1 {
+    padding-top: 15px;
+  }
+
+  nav {
+    padding-bottom: 15px;
   }
 
   .menu {
     list-style-type: none;
   }
 
+  footer {
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .titulo_footer {
+    margin: 10px 10px 0px 10px;
+    padding: 0;
+  }
+
   #contenido {
     width: 100%;
+  }
+
+  #imagen_secundaria_izquierda {
+    width: 100%;
+    background-color: #d5c75f;
+    text-align: center;
+    order: 2;
+  }
+
+  #imagen_secundaria_derecha {
+    width: 100%;
+    background-color: #d5c75f;
+    text-align: center;
+    order: 3;
+  }
+
+  #contacto {
+    width: 100%;
+    text-align: left;
+    order: 1;
+    padding: 2% 3% 1% 10%;
+  }
+
+  #terminos {
+    width: 100%;
+    text-align: left;
+    order: 2;
+    padding: 2% 3% 1% 10%;
+  }
+
+  #redes_sociales {
+    width: 100%;
+    text-align: left;
+    order: 3;
+    padding: 2% 3% 1% 10%;
+  }
+
+  #derechos {
+    width: 100%;
+    text-align: left;
+    order: 4;
+    padding: 2% 3% 1% 10%;
+  }
+
+  #imagen_1 {
+    width: 100%;
+    background-color: #d5c75f;
+    order: 1;
+  }
+
+  #imagen_2 {
+    width: 100%;
+    background-color: #d5c75f;
+    order: 2;
+  }
+
+  #imagen_3 {
+    width: 100%;
+    background-color: #d5c75f;
+    order: 3;
+  }
+
+  #imagen_4 {
+    width: 100%;
+    background-color: #d5c75f;
+    order: 4;
+  }
+
+  #imagen_5 {
+    width: 100%;
+    background-color: #d5c75f;
+    order: 5;
+  }
+
+  #imagen_6 {
+    width: 100%;
+    background-color: #d5c75f;
+    order: 6;
   }
 }
